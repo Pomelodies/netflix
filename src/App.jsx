@@ -2,6 +2,7 @@ import data from "./assets/data.json";
 import logo from "./img/logo.png";
 import "./App.css";
 // console.log(data);
+import Section from "./components/Section";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <img src={logo} alt="Logo Netflix" />
       </header>
       <main>
-        <section>
+        <Section />
+        {/* <section>
           <h2>Emissions TV</h2>
           <div>
             <img
@@ -115,7 +117,7 @@ function App() {
               alt="Emmission1"
             />
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );
