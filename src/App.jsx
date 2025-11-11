@@ -6,7 +6,10 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <img src={logo} alt="Logo Netflix" />
+      <header>
+        <img src={logo} alt="Logo Netflix" />
+      </header>
+
       <main>
         <section>
           <p>Emission TV</p>
