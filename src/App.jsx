@@ -11,9 +11,14 @@ function App() {
         <img src={logo} alt="Logo Netflix" />
       </header>
       <main>
-        {data.map((element) => {
-          // return console.log(element.category);
-          return <Section category={element.category} />;
+        {data.map((element, index) => {
+          console.log(element.images);
+          return (
+            <Section
+              id={element.category + index}
+              category={element.category}
+            />
+          );
         })}
       </main>
     </div>
