@@ -12,11 +12,12 @@ function App() {
       </header>
       <main>
         {data.map((element, index) => {
-          console.log(element.images);
+          // console.log(element.images);
           return (
             <Section
               id={element.category + index}
               category={element.category}
+              showsImages={element.images}
             />
           );
         })}
